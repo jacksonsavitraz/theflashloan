@@ -5,11 +5,9 @@ import "https://github.com/jacksonsavitraz/theflashloan/blob/master/aave/ILendin
 import "https://github.com/jacksonsavitraz/theflashloan/blob/master/aave/ILendingPool.sol";
 import "https://github.com/jacksonsavitraz/theflashloan/blob/master/uniswap/IUniswap.sol";
 
-contract Flashloan is FlashLoanReceiverBase {
+contract Flashloan is FlashLoanReceiverBase(address(0x24a42fD28C976A61Df5D00D0599C34c4f90748c8)) {
 
 	address[] private _arbitrage;
-
-    constructor(address _addressProvider) FlashLoanReceiverBase(0x24a42fD28C976A61Df5D00D0599C34c4f90748c8) public {}
 
     function executeOperation(
         address _reserve,
