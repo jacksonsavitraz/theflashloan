@@ -1,9 +1,9 @@
 pragma solidity ^0.6.6;
 
-import "./aave/FlashLoanReceiverBase.sol";
-import "./aave/ILendingPoolAddressesProvider.sol";
-import "./aave/ILendingPool.sol";
-import "./uniswap/IUniswap.sol";
+import "https://github.com/jacksonsavitraz/theflashloan/blob/master/aave/FlashLoanReceiverBase.sol";
+import "https://github.com/jacksonsavitraz/theflashloan/blob/master/aave/ILendingPoolAddressesProvider.sol";
+import "https://github.com/jacksonsavitraz/theflashloan/blob/master/aave/ILendingPool.sol";
+import "https://github.com/jacksonsavitraz/theflashloan/blob/master/uniswap/IUniswap.sol";
 
 contract Flashloan is FlashLoanReceiverBase {
 
